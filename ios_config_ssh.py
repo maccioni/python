@@ -32,19 +32,24 @@ from datetime import datetime
 #
 # List all the devices
 # Make sure the device_type is cisco_ios_telnet (for SSH use cisco_xe)
+# FIXME: change USERNAME and PASSWORD
 #
+USERNAME  = 'cisco'
+PASSWORD  = 'cisco'
+TRANSPORT = 'cisco_ios_telnet'
+
 cat3k1 = {
-'device_type': 'cisco_ios_telnet',
 'ip': '172.26.249.167',
-'username': 'cisco',
-'password': 'cisco',
+'username': USERNAME,
+'password': PASSWORD,
+'device_type': TRANSPORT,
 }
 
 cat3k2 = {
-'device_type': 'cisco_ios_telnet',
 'ip': '172.26.249.161',
-'username': 'cisco',
-'password': 'cisco',
+'username': USERNAME,
+'password': PASSWORD,
+'device_type': TRANSPORT,
 }
 all_devices = [cat3k1, cat3k2]
 
